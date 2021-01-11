@@ -217,7 +217,6 @@
 		94F7629125AC669F00332FE6 /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				94F7629225AC669F00332FE6 /* umbagog@2x.jpg */,
 				94F7629325AC669F00332FE6 /* twinlake@2x.jpg */,
 				94F7629425AC669F00332FE6 /* chincoteague@2x.jpg */,
 				94F7629525AC669F00332FE6 /* lakemcdonald@2x.jpg */,
@@ -228,6 +227,7 @@
 				94F7629A25AC669F00332FE6 /* stmarylake@2x.jpg */,
 				94F7629B25AC669F00332FE6 /* charleyrivers@2x.jpg */,
 				94F7629C25AC669F00332FE6 /* rainbowlake@2x.jpg */,
+				94F7629225AC669F00332FE6 /* umbagog@2x.jpg */,
 			);
 			path = Images;
 			sourceTree = "<group>";
