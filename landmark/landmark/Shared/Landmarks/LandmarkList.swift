@@ -11,6 +11,7 @@ struct LandmarkList: View {
         }
     
     var body: some View {
+        
         NavigationView{
             List{
                 Toggle(isOn: $showFavoritesOnly) {
@@ -22,9 +23,13 @@ struct LandmarkList: View {
                     LandmarkRow(landmark: landmark)
                     }
                 }
+                .onDelete(perform:delete)
             }
             .navigationTitle("Landmarks")
         }
+    }
+    func delete(at offsets:IndexSet){
+        modelData.landmarks.remove(atOffsets: offsets)
     }
 }
 
