@@ -24,12 +24,18 @@ struct LandmarkList: View {
                     }
                 }
                 .onDelete(perform:delete)
+                .onMove(perform: move)
             }
             .navigationTitle("Landmarks")
+            .navigationBarItems(trailing: EditButton())
         }
     }
     func delete(at offsets:IndexSet){
         modelData.landmarks.remove(atOffsets: offsets)
+    }
+    
+    func move(from source: IndexSet, to destination: Int){
+        modelData.landmarks.move(fromOffsets: source, toOffset: destination)
     }
 }
 
