@@ -18,6 +18,7 @@
 		94A28B4E25AC41E10008270D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94A28B2325AC41E00008270D /* Assets.xcassets */; };
 		94A28B4F25AC41E10008270D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94A28B2325AC41E00008270D /* Assets.xcassets */; };
 		94DB691E25B56DE700AB98F2 /* LandmarksApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A28B2125AC41DE0008270D /* LandmarksApp.swift */; };
+		94DB692C25B5725400AB98F2 /* FavoriteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94DB692B25B5725400AB98F2 /* FavoriteButton.swift */; };
 		94F7628125AC646600332FE6 /* landmarkData.json in Resources */ = {isa = PBXBuildFile; fileRef = 94F7628025AC646600332FE6 /* landmarkData.json */; };
 		94F7628225AC646600332FE6 /* landmarkData.json in Resources */ = {isa = PBXBuildFile; fileRef = 94F7628025AC646600332FE6 /* landmarkData.json */; };
 		94F7628825AC650E00332FE6 /* Landmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F7628725AC650E00332FE6 /* Landmark.swift */; };
@@ -73,6 +74,7 @@
 		94A28B4325AC41E10008270D /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		94A28B4725AC41E10008270D /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		94A28B4925AC41E10008270D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		94DB692B25B5725400AB98F2 /* FavoriteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteButton.swift; sourceTree = "<group>"; };
 		94F7628025AC646600332FE6 /* landmarkData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = landmarkData.json; path = ../landmarkData.json; sourceTree = "<group>"; };
 		94F7628725AC650E00332FE6 /* Landmark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Landmark.swift; sourceTree = "<group>"; };
 		94F7629025AC669F00332FE6 /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
@@ -147,6 +149,8 @@
 		94A28B2025AC41DE0008270D /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				94DB693225B5744300AB98F2 /* Landmarks */,
+				94DB693125B573D800AB98F2 /* Helpers */,
 				94A28B2125AC41DE0008270D /* LandmarksApp.swift */,
 				947E2CA225AF167A000EF826 /* Model */,
 				94F762B925AC6D9600332FE6 /* Views */,
@@ -202,6 +206,26 @@
 			path = "Tests macOS";
 			sourceTree = "<group>";
 		};
+		94DB693125B573D800AB98F2 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				94DB692B25B5725400AB98F2 /* FavoriteButton.swift */,
+				9416A56C25AC8147002C1BE9 /* MapView.swift */,
+				9416A55D25AC7ECE002C1BE9 /* CircleImage.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		94DB693225B5744300AB98F2 /* Landmarks */ = {
+			isa = PBXGroup;
+			children = (
+				947E2C9425AEFF1A000EF826 /* LandmarkDetail.swift */,
+				94F762BE25AC6E5D00332FE6 /* LandmarkRow.swift */,
+				947E2C8425AEFA99000EF826 /* LandmarkList.swift */,
+			);
+			path = Landmarks;
+			sourceTree = "<group>";
+		};
 		94F7628E25AC669F00332FE6 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -241,12 +265,7 @@
 		94F762B925AC6D9600332FE6 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				94F762BE25AC6E5D00332FE6 /* LandmarkRow.swift */,
-				947E2C8425AEFA99000EF826 /* LandmarkList.swift */,
-				947E2C9425AEFF1A000EF826 /* LandmarkDetail.swift */,
 				94A28B2225AC41DE0008270D /* ContentView.swift */,
-				9416A55D25AC7ECE002C1BE9 /* CircleImage.swift */,
-				9416A56C25AC8147002C1BE9 /* MapView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -425,6 +444,7 @@
 				9416A56D25AC8147002C1BE9 /* MapView.swift in Sources */,
 				94A28B4C25AC41E10008270D /* ContentView.swift in Sources */,
 				94A28B4A25AC41E10008270D /* LandmarksApp.swift in Sources */,
+				94DB692C25B5725400AB98F2 /* FavoriteButton.swift in Sources */,
 				947E2C8525AEFA99000EF826 /* LandmarkList.swift in Sources */,
 				947E2C9525AEFF1A000EF826 /* LandmarkDetail.swift in Sources */,
 				94F762B025AC680600332FE6 /* ModelData.swift in Sources */,
