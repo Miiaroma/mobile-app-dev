@@ -27,6 +27,12 @@ struct LandmarkDetail: View {
                         .font(.title)
                         .foregroundColor(.primary)
                     FavoriteButton(isSet:$modelData.landmarks[landmarkIndex].isFavorite)
+                    Button(action: {
+                    // Action will goes here
+                    }) {
+                    //Text("Delete")
+                    Image(systemName: "trash")
+                    }
                 }
                 
             HStack {
