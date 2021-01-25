@@ -3,7 +3,7 @@ import SwiftUI
 struct LandmarkDetail: View {
     @EnvironmentObject var modelData: ModelData
     var landmark: Landmark
-    
+    @State private var showingAlert = false
     var landmarkIndex: Int {
         guard let index = modelData.landmarks.firstIndex(where: {return $0.id == landmark.id}) else {
             return 0
@@ -29,10 +29,16 @@ struct LandmarkDetail: View {
                     FavoriteButton(isSet:$modelData.landmarks[landmarkIndex].isFavorite)
                     Button(action: {
                     // Action will goes here
-                    }) {
+                    self.showingAlert = true
+                                               }) {
                     //Text("Delete")
                     Image(systemName: "trash")
-                    }
+                        Text("Show Alert")
+                        .font(.title)
+                        .foregroundColor(Color.white)
+                        }
+                        .alert(isPresented: $showingAlert) {
+                        Alert(title: Text("Alert"), message: Text("Are you sure you want to delete this?"), primaryButton: .default(Text("OK")), secondaryButton: .destructive(Text("Cancel")))                    }
                 }
                 
             HStack {
