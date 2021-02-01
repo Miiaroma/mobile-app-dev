@@ -1,10 +1,3 @@
-//
-//  WeatherModel.swift
-//  WeatherApp (iOS)
-//
-//  Created by Miia Romanainen on 1.2.2021.
-//
-
 import Foundation
 struct Weather: Codable {
     let id: Int

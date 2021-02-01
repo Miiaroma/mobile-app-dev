@@ -147,6 +147,7 @@
 				944199AB25BEF52000529E99 /* Resorces */,
 				9441996A25BEF0E300529E99 /* WeatherAppApp.swift */,
 				9441996C25BEF0E400529E99 /* Assets.xcassets */,
+				944199AD25BEF66900529E99 /* 1024.png */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -209,7 +210,6 @@
 			isa = PBXGroup;
 			children = (
 				944199B925BEF6D800529E99 /* light_background.pdf */,
-				944199AD25BEF66900529E99 /* 1024.png */,
 				944199B325BEF6C300529E99 /* dark_background.pdf */,
 			);
 			path = Images;
@@ -295,7 +295,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1230;
-				LastUpgradeCheck = 1230;
+				LastUpgradeCheck = 1240;
 				TargetAttributes = {
 					9441997025BEF0E400529E99 = {
 						CreatedOnToolsVersion = 12.3;
@@ -586,6 +586,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				ENABLE_PREVIEWS = YES;
@@ -608,6 +609,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				ENABLE_PREVIEWS = YES;

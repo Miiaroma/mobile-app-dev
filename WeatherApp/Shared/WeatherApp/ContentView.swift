@@ -13,7 +13,7 @@ struct ContentView: View {
    @State var city: String = ""
     var body: some View {
         VStack() {
-            TextField("Enter your city", text: $city, onCommit: {
+            TextField("Search city", text: $city, onCommit: {
             self.weather.fetch(by: self.city)
             }).padding(.horizontal)
             

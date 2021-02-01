@@ -15,7 +15,7 @@ struct CurrentWeather: View {
                 .foregroundColor(Color.white)
             Spacer()
             
-            Text("\(weather?.main.temp.rounded(FloatingPointRoundingRule.toNearestOrAwayFromZero) ?? 0) °C")
+            Text("\(weather?.main.temp ?? 0) °C")
                 .foregroundColor(.white)
                 .fontWeight(Font.Weight.heavy)
                 .font(.system(size: 65))
