@@ -1,4 +1,3 @@
-
 import SwiftUI
 
 struct CurrentWeather: View {
@@ -13,13 +12,9 @@ struct CurrentWeather: View {
                 .padding(60)
                 .shadow(color: .gray, radius: 12)
                 .foregroundColor(Color.white)
-            
-            Spacer()
+            //Spacer()
             
             Image(uiImage: "https://openweathermap.org/img/wn/\(weather?.weather.first?.icon ?? "Unknown")@2x.png".load())
-            
-            //Text("\(weather?.weather[0].icon ?? "Ei XX Tietoa")")
-            //Image("\loadImageFromURL(url: https://openweathermap.org/img/wn/\(weather?.weather[0].icon)@2x.png")*/
             
             Text("\(weather?.main.temp ?? 0, specifier: "%.1f") °C")
                 .foregroundColor(.white)

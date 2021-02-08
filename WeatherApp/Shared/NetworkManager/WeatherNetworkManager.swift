@@ -1,10 +1,3 @@
-//
-//  WeatherNetworkManager.swift
-//  WeatherApp (iOS)
-//
-//  Created by Miia Romanainen on 1.2.2021.
-//
-
 import Foundation
 
 class WeatherNetworkManager : NetworkManagerProtocol {
@@ -17,7 +10,7 @@ class WeatherNetworkManager : NetworkManagerProtocol {
         fatalError()
     }
         
-    print(url)
+    //print(url)
     let urlRequest = URLRequest(url: url)
     URLSession.shared.dataTask(with: urlRequest) { (data, response, error) in
     guard let data = data else { return }
