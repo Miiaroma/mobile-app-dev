@@ -34,12 +34,12 @@ class WeatherNetworkManager : NetworkManagerProtocol {
     struct NetworkProperties {
         static let API_KEY = "1adfcdb6b64b59edcd01d5fae37b8f86"
     }
-    /*func fetchCurrentLocationWeather(lat: String, lon: String, completion: @escaping (WeatherModel) -> ())
-    func fetchNextFiveWeatherForecast(city: String, completion: @escaping ([ForecastTemperature]) -> ())*/
-    //3 protocol methods will appear here
+    //func fetchCurrentLocationWeather(lat: String, lon: String, completion: @escaping (WeatherModel) -> ())
+    //func fetchNextFiveWeatherForecast(city: String, completion: @escaping ([ForecastTemperature]) -> ())
+    //}
     
-   
     }
     
 }
+
 
