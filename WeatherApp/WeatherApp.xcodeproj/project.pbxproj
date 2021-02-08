@@ -27,6 +27,7 @@
 		94BA1FC625D10EAD0021002A /* 60.png in Resources */ = {isa = PBXBuildFile; fileRef = 94BA1FC225D10EAD0021002A /* 60.png */; };
 		94BA1FC725D10EAD0021002A /* 83.png in Resources */ = {isa = PBXBuildFile; fileRef = 94BA1FC325D10EAD0021002A /* 83.png */; };
 		94BA1FC825D10EAD0021002A /* 84.png in Resources */ = {isa = PBXBuildFile; fileRef = 94BA1FC425D10EAD0021002A /* 84.png */; };
+		94BA1FD225D12C180021002A /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94BA1FD125D12C180021002A /* UIImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +74,7 @@
 		94BA1FC225D10EAD0021002A /* 60.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 60.png; sourceTree = "<group>"; };
 		94BA1FC325D10EAD0021002A /* 83.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 83.png; sourceTree = "<group>"; };
 		94BA1FC425D10EAD0021002A /* 84.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 84.png; sourceTree = "<group>"; };
+		94BA1FD125D12C180021002A /* UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +132,7 @@
 				9441996B25BEF0E300529E99 /* ContentView.swift */,
 				941466B625C81474000F3337 /* CurrentWeather.swift */,
 				941466C025C8191D000F3337 /* CurrentWeatherView.swift */,
+				94BA1FD125D12C180021002A /* UIImageView.swift */,
 			);
 			path = WeatherApp;
 			sourceTree = "<group>";
@@ -216,8 +219,8 @@
 		944199AC25BEF53900529E99 /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				944199AD25BEF66900529E99 /* 1024.png */,
 				94BA1FC225D10EAD0021002A /* 60.png */,
+				944199AD25BEF66900529E99 /* 1024.png */,
 				94BA1FC125D10EAD0021002A /* 76.png */,
 				94BA1FC325D10EAD0021002A /* 83.png */,
 				94BA1FC425D10EAD0021002A /* 84.png */,
@@ -391,6 +394,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94BA1FD225D12C180021002A /* UIImageView.swift in Sources */,
 				9441999525BEF0E400529E99 /* ContentView.swift in Sources */,
 				9414669325C7DC9F000F3337 /* NetworkManagerProtocol.swift in Sources */,
 				9441999325BEF0E400529E99 /* WeatherAppApp.swift in Sources */,

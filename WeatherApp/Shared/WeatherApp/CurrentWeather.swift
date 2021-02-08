@@ -13,8 +13,13 @@ struct CurrentWeather: View {
                 .padding(60)
                 .shadow(color: .gray, radius: 12)
                 .foregroundColor(Color.white)
+            
             Spacer()
-            /*Image("\loadImageFromURL(url: https://openweathermap.org/img/wn/\(weather.weather[0].icon)@2x.png")*/
+            
+            Image(uiImage: "https://openweathermap.org/img/wn/\(weather?.weather.first?.icon ?? "Unknown")@2x.png".load())
+            
+            //Text("\(weather?.weather[0].icon ?? "Ei XX Tietoa")")
+            //Image("\loadImageFromURL(url: https://openweathermap.org/img/wn/\(weather?.weather[0].icon)@2x.png")*/
             
             Text("\(weather?.main.temp ?? 0, specifier: "%.1f") °C")
                 .foregroundColor(.white)
@@ -40,9 +45,30 @@ struct CurrentWeather: View {
         
     }
 }
-
-struct CurrentWeather_Previews: PreviewProvider {
-    static var previews: some View {
-    CurrentWeather()
+    
+    struct CurrentWeather_Previews: PreviewProvider {
+        static var previews: some View {
+            CurrentWeather()
+        }
+    }
+
+extension String{
+    func load() -> UIImage {
+        do {
+            guard let url = URL(string:
+                                    self)
+            else{
+                return UIImage()
+            }
+            print(url)
+            let data: Data = try
+                Data(contentsOf: url)
+            return UIImage(data:data)
+                ?? UIImage()
+        }
+        catch {
+            
+        }
+        return UIImage()
     }
 }
