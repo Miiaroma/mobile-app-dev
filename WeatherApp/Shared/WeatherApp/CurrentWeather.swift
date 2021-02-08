@@ -14,8 +14,9 @@ struct CurrentWeather: View {
                 .shadow(color: .gray, radius: 12)
                 .foregroundColor(Color.white)
             Spacer()
-            //Image("\loadImageFromURL(url: "https://openweathermap.org/img/wn/\(weather.weather[0].icon)@2x.png")")
-            Text("\(weather?.main.temp ?? 0, specifier: "%.2f")")
+            /*Image("\loadImageFromURL(url: https://openweathermap.org/img/wn/\(weather.weather[0].icon)@2x.png")*/
+            
+            Text("\(weather?.main.temp ?? 0, specifier: "%.1f") °C")
                 .foregroundColor(.white)
                 .fontWeight(Font.Weight.heavy)
                 .font(.system(size: 65))
