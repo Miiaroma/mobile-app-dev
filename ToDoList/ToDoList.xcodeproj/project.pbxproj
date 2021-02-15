@@ -128,6 +128,7 @@
 		94BA210B25D16E560021002A /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94BA210A25D16E560021002A /* Helper.swift */; };
 		94BA211025D16E7D0021002A /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94BA210F25D16E7D0021002A /* Order.swift */; };
 		94BA218925D171CD0021002A /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94BA218825D171CD0021002A /* Menu.swift */; };
+		94E38A0625DA60B500B484BD /* menu.json in Resources */ = {isa = PBXBuildFile; fileRef = 94E38A0525DA60B500B484BD /* menu.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -275,6 +276,7 @@
 		94BA210A25D16E560021002A /* Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		94BA210F25D16E7D0021002A /* Order.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
 		94BA218825D171CD0021002A /* Menu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
+		94E38A0525DA60B500B484BD /* menu.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = menu.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -330,6 +332,7 @@
 				94BA1FF525D1682E0021002A /* ContentView.swift */,
 				94BA210A25D16E560021002A /* Helper.swift */,
 				94BA210F25D16E7D0021002A /* Order.swift */,
+				94E38A0525DA60B500B484BD /* menu.json */,
 				94BA202125D169380021002A /* Resources */,
 				94BA1FF725D1682F0021002A /* Assets.xcassets */,
 				94BA1FFC25D1682F0021002A /* Info.plist */,
@@ -610,6 +613,7 @@
 				94BA20EC25D169770021002A /* veggie-pizza@2x.jpg in Resources */,
 				94BA20EB25D169770021002A /* macarons-galore@2x.jpg in Resources */,
 				94BA20C825D169770021002A /* tower-burger-thumb@3x.jpg in Resources */,
+				94E38A0625DA60B500B484BD /* menu.json in Resources */,
 				94BA20E425D169770021002A /* mexican-mocha@2x.jpg in Resources */,
 				94BA20E825D169770021002A /* thai-red-curry-thumb@3x.jpg in Resources */,
 				94BA209D25D169770021002A /* mexican-mocha-thumb@2x.jpg in Resources */,
