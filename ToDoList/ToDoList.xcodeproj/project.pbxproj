@@ -133,6 +133,7 @@
 		94E38A1025DA831700B484BD /* ItemDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E38A0F25DA831700B484BD /* ItemDetail.swift */; };
 		94E38A1525DA961400B484BD /* OrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E38A1425DA961400B484BD /* OrderView.swift */; };
 		94E38A1A25DA993400B484BD /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E38A1925DA993400B484BD /* MainView.swift */; };
+		94E38A1F25DA9B7200B484BD /* CheckoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E38A1E25DA9B7200B484BD /* CheckoutView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -285,6 +286,7 @@
 		94E38A0F25DA831700B484BD /* ItemDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetail.swift; sourceTree = "<group>"; };
 		94E38A1425DA961400B484BD /* OrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderView.swift; sourceTree = "<group>"; };
 		94E38A1925DA993400B484BD /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		94E38A1E25DA9B7200B484BD /* CheckoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -341,6 +343,7 @@
 				94E38A0F25DA831700B484BD /* ItemDetail.swift */,
 				94E38A1425DA961400B484BD /* OrderView.swift */,
 				94E38A1925DA993400B484BD /* MainView.swift */,
+				94E38A1E25DA9B7200B484BD /* CheckoutView.swift */,
 				94BA210A25D16E560021002A /* Helper.swift */,
 				94BA210F25D16E7D0021002A /* Order.swift */,
 				94E38A0525DA60B500B484BD /* menu.json */,
@@ -751,6 +754,7 @@
 			files = (
 				94E38A1025DA831700B484BD /* ItemDetail.swift in Sources */,
 				94E38A1A25DA993400B484BD /* MainView.swift in Sources */,
+				94E38A1F25DA9B7200B484BD /* CheckoutView.swift in Sources */,
 				94E38A1525DA961400B484BD /* OrderView.swift in Sources */,
 				94BA1FF625D1682E0021002A /* ContentView.swift in Sources */,
 				94BA1FF425D1682E0021002A /* ToDoListApp.swift in Sources */,
