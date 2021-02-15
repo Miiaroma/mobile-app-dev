@@ -21,10 +21,10 @@ struct CheckoutView: View {
     var totalPrice: String {
         let formatter = NumberFormatter()
         formatter.numberStyle = .currency
-
+        
         let total = Double(order.total)
         let tipValue = total / 100 * Double(tipAmount)
-
+        
         return formatter.string(from: NSNumber(value: total + tipValue)) ?? "$0"
     }
     
@@ -52,6 +52,7 @@ struct CheckoutView: View {
             }
             Section(header:
                         Text("TOTAL: \(totalPrice)")
+                        .font(.largeTitle)
             ) {
                 Button("Confirm order") {
                     showingPaymentAlert.toggle()

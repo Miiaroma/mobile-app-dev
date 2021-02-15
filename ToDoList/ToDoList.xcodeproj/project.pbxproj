@@ -346,12 +346,12 @@
 				94E38A1E25DA9B7200B484BD /* CheckoutView.swift */,
 				94BA210A25D16E560021002A /* Helper.swift */,
 				94BA210F25D16E7D0021002A /* Order.swift */,
+				94E38A0A25DA640D00B484BD /* ItemRow.swift */,
 				94E38A0525DA60B500B484BD /* menu.json */,
 				94BA202125D169380021002A /* Resources */,
 				94BA1FF725D1682F0021002A /* Assets.xcassets */,
 				94BA1FFC25D1682F0021002A /* Info.plist */,
 				94BA1FF925D1682F0021002A /* Preview Content */,
-				94E38A0A25DA640D00B484BD /* ItemRow.swift */,
 			);
 			path = ToDoList;
 			sourceTree = "<group>";
