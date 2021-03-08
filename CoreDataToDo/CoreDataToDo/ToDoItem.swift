@@ -19,7 +19,8 @@ extension ToDoItem {
         NSFetchRequest<ToDoItem>
         
         let sortDesriptor = NSSortDescriptor(key: "createdAt", ascending: true)
-        request.sortDescriptors = [sortDescriptor]
+        
+        request.sortDescriptors = [sortDesriptor]
         
         return request
     }

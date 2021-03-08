@@ -17,6 +17,7 @@
 		940645D225F5F9D700170773 /* CoreDataToDoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 940645D125F5F9D700170773 /* CoreDataToDoTests.swift */; };
 		940645DD25F5F9D700170773 /* CoreDataToDoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 940645DC25F5F9D700170773 /* CoreDataToDoUITests.swift */; };
 		940645EE25F5FCCD00170773 /* ToDoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 940645ED25F5FCCD00170773 /* ToDoItem.swift */; };
+		940645F325F61CD000170773 /* ToDoItemview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 940645F225F61CD000170773 /* ToDoItemview.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		940645DC25F5F9D700170773 /* CoreDataToDoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataToDoUITests.swift; sourceTree = "<group>"; };
 		940645DE25F5F9D700170773 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		940645ED25F5FCCD00170773 /* ToDoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoItem.swift; sourceTree = "<group>"; };
+		940645F225F61CD000170773 /* ToDoItemview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoItemview.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				940645B725F5F9D400170773 /* AppDelegate.swift */,
 				940645B925F5F9D400170773 /* SceneDelegate.swift */,
 				940645BB25F5F9D400170773 /* ContentView.swift */,
+				940645F225F61CD000170773 /* ToDoItemview.swift */,
 				940645ED25F5FCCD00170773 /* ToDoItem.swift */,
 				940645C025F5F9D700170773 /* Assets.xcassets */,
 				940645C525F5F9D700170773 /* LaunchScreen.storyboard */,
@@ -275,6 +278,7 @@
 				940645B825F5F9D400170773 /* AppDelegate.swift in Sources */,
 				940645BA25F5F9D400170773 /* SceneDelegate.swift in Sources */,
 				940645EE25F5FCCD00170773 /* ToDoItem.swift in Sources */,
+				940645F325F61CD000170773 /* ToDoItemview.swift in Sources */,
 				940645BF25F5F9D400170773 /* CoreDataToDo.xcdatamodeld in Sources */,
 				940645BC25F5F9D400170773 /* ContentView.swift in Sources */,
 			);
