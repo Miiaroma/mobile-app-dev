@@ -14,6 +14,7 @@
 		9406462625F644BF00170773 /* CameraTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9406462525F644BF00170773 /* CameraTests.swift */; };
 		9406463125F644BF00170773 /* CameraUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9406463025F644BF00170773 /* CameraUITests.swift */; };
 		9406464225F6458800170773 /* CameraButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9406464125F6458800170773 /* CameraButtonView.swift */; };
+		9406464725F64D5400170773 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9406464625F64D5400170773 /* ImagePicker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		9406463025F644BF00170773 /* CameraUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraUITests.swift; sourceTree = "<group>"; };
 		9406463225F644BF00170773 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9406464125F6458800170773 /* CameraButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraButtonView.swift; sourceTree = "<group>"; };
+		9406464625F64D5400170773 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				9406461C25F644BE00170773 /* Info.plist */,
 				9406461925F644BE00170773 /* Preview Content */,
 				9406464125F6458800170773 /* CameraButtonView.swift */,
+				9406464625F64D5400170773 /* ImagePicker.swift */,
 			);
 			path = Camera;
 			sourceTree = "<group>";
@@ -263,6 +266,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9406464225F6458800170773 /* CameraButtonView.swift in Sources */,
+				9406464725F64D5400170773 /* ImagePicker.swift in Sources */,
 				9406461625F644B000170773 /* ContentView.swift in Sources */,
 				9406461425F644B000170773 /* CameraApp.swift in Sources */,
 			);
