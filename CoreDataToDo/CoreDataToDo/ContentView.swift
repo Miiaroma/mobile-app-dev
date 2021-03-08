@@ -18,8 +18,8 @@ struct ContentView: View {
             List{
                 Section(header: Text("What's next?")){
                     HStack{
-                        TextField("New item", text: self.$newTodoItem)
-                         Button(action: {
+                         TextField("New item", text: self.$newTodoItem)
+                            Button(action: {
                             let toDoItem = ToDoItem(context: self.managedObjectContext)
                             toDoItem.title = self.newTodoItem
                             toDoItem.createdAt = Date()
@@ -36,7 +36,7 @@ struct ContentView: View {
                             Image(systemName: "plus.circle.fill")
                                 .foregroundColor(.green)
                                 .imageScale(.large)
-                         }
+                        }
                     }
                 }.font(.headline)
                 Section(header: Text("To Do's")){
@@ -55,8 +55,8 @@ struct ContentView: View {
                 }
             }
             .navigationBarTitle(Text("My List"))
-            .navigationBarItems(trailing: EditButton())        }
-       
+            .navigationBarItems(trailing: EditButton())
+        }
     }
 }
 
