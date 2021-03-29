@@ -28,7 +28,7 @@ enum CalculatorButton: String {
     case decimal = "."
     case mc = "MC"
     case mPlus = "M+"
-    case mMinus = "M-"
+    case pow = "x^"
     case squareRoot = "√"
     case ac = "AC"
     
@@ -36,7 +36,7 @@ enum CalculatorButton: String {
         switch self {
         case .zero, .one, .two, .three, .four, .five, .six, .seven, .eight, .nine:
             return Color(.darkGray)
-        case .ac, .plusMinus,.percent, .mc, .mPlus, .mMinus, .squareRoot:
+        case .ac, .plusMinus,.percent, .mc, .mPlus, .pow, .squareRoot:
             return Color(.lightGray)
         default:
             return .orange
@@ -45,16 +45,16 @@ enum CalculatorButton: String {
 }
 
 enum Operation {
-    case add, subtract, multiply, divide, none
+    case add, subtract, multiply, divide, percent, pow, squareRoot, none
 }
 
 struct ContentView: View {
     @State var value = "0"
-    @State var runningNumber = 0
+    @State var runningNumber: Double = 0
     @State var currentOperation: Operation = .none
     
     let buttons: [[CalculatorButton]] = [
-        [.mc, .mPlus, .mMinus, .squareRoot],
+        [.mc, .mPlus, .pow, .squareRoot],
         [.ac, .plusMinus, .percent, .divide],
         [.seven, .eight, .nine, .multiply],
         [.four, .five, .six, .subtract],
@@ -106,31 +106,47 @@ struct ContentView: View {
     
     func didTap(button: CalculatorButton) {
         switch button {
-        case .add, .subtract, .multiply, .divide, .equal:
+        case .add, .subtract, .multiply, .divide, .equal, .squareRoot, .percent, .pow:
             if button == .add {
                 currentOperation = .add
-                self.runningNumber = Int(self.value) ?? 0
+                self.runningNumber = Double(self.value) ?? 0
             }
             else if button == .subtract {
                 self.currentOperation = .subtract
-                self.runningNumber = Int(self.value) ?? 0
+                self.runningNumber = Double(self.value) ?? 0
             }
             else if button == .multiply {
                 self.currentOperation = .multiply
-                self.runningNumber = Int(self.value) ?? 0
+                self.runningNumber = Double(self.value) ?? 0
             }
             else if button == .divide {
                 self.currentOperation = .divide
-                self.runningNumber = Int(self.value) ?? 0
+                self.runningNumber = Double(self.value) ?? 0
+            }
+            else if button == .percent {
+                self.currentOperation = .percent
+                self.runningNumber = Double(self.value) ?? 0
+            }
+            else if button == .squareRoot {
+                self.currentOperation = .squareRoot
+                self.runningNumber = Double(self.value) ?? 0
+            }
+            else if button == .pow {
+                self.currentOperation = .pow
+                self.runningNumber = Double(self.value) ?? 0
             }
             else if button == .equal {
                 let runningValue = self.runningNumber
-                let currentValue = Int(self.value) ?? 0
+                let currentValue = Double(self.value) ?? 0
+                
                 switch self.currentOperation {
                 case .add: self.value = "\(runningValue + currentValue)"
                 case .subtract: self.value = "\(runningValue - currentValue)"
                 case .multiply: self.value = "\(runningValue * currentValue)"
                 case .divide: self.value = "\(runningValue / currentValue)"
+                case .percent: self.value = "\(runningValue / 100 * currentValue)"
+                case .squareRoot: self.value = "\(runningValue.squareRoot())"
+                case .pow: self.value = "\(pow(runningValue,currentValue))"
                 case .none:
                     break
                 }
@@ -141,7 +157,7 @@ struct ContentView: View {
             }
         case .ac:
             self.value = "0"
-        case .decimal, .plusMinus, .percent:
+        case .decimal, .plusMinus:
             break
         default:
             let number = button.rawValue
@@ -163,7 +179,7 @@ struct ContentView: View {
     
     
     func buttonHeight() -> CGFloat {
-        return (UIScreen.main.bounds.width - (5*12)) / 4
+        return (UIScreen.main.bounds.width - (5*12))/4
     }
 }
 
