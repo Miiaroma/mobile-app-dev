@@ -67,24 +67,24 @@ struct ContentView: View {
             Color.black.edgesIgnoringSafeArea(.all)
             
             VStack {
-                Spacer()
+                // Spacer()
                 
                 // Text display
                 HStack {
                     Spacer()
                     Text(value)
                         .bold()
-                        .font(.system(size: 100))
+                        .font(.system(size: 80))
                         .foregroundColor(.white)
                 }
-                .padding()
+                .padding(.top, 3)
                 
-                // Our buttons
+                // Buttons
                 ForEach(buttons, id: \.self) { row in
                     HStack(spacing: 12) {
                         ForEach(row, id: \.self) { item in
                             Button(action: {
-                                self.didTap(button: item)
+                                self.tapButton(button: item)
                             }, label: {
                                 Text(item.rawValue)
                                     .font(.system(size: 32))
@@ -98,13 +98,13 @@ struct ContentView: View {
                             })
                         }
                     }
-                    .padding(.bottom, 3)
+                    .padding(.bottom, 2)
                 }
             }
         }
     }
     
-    func didTap(button: CalculatorButton) {
+    func tapButton(button: CalculatorButton) {
         switch button {
         case .add, .subtract, .multiply, .divide, .equal, .squareRoot, .percent, .pow:
             if button == .add {
@@ -145,7 +145,7 @@ struct ContentView: View {
                 case .multiply: self.value = "\(runningValue * currentValue)"
                 case .divide: self.value = "\(runningValue / currentValue)"
                 case .percent: self.value = "\(runningValue / 100 * currentValue)"
-                case .squareRoot: self.value = "\(runningValue.squareRoot())"
+                case .squareRoot: self.value = "\((runningValue).squareRoot())"
                 case .pow: self.value = "\(pow(runningValue,currentValue))"
                 case .none:
                     break
