@@ -157,7 +157,8 @@ struct ContentView: View {
             }
         case .ac:
             self.value = "0"
-        case .decimal, .plusMinus:
+        case .decimal:
+            self.value = value + button.rawValue
             break
         default:
             let number = button.rawValue
