@@ -162,7 +162,7 @@ struct ContentView: View {
             self.value = value + button.rawValue
             break
         case .plusMinus:
-            self.value = "-"
+            self.value = "-" + value
             break
         default:
             let number = button.rawValue
