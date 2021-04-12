@@ -20,7 +20,7 @@ enum CalculatorButton: String {
     case nine = "9"
     case add = "+"
     case subtract = "-"
-    case multiply = "X"
+    case multiply = "x"
     case divide = "/"
     case plusMinus = "+/-"
     case percent = "%"
@@ -145,20 +145,24 @@ struct ContentView: View {
                 case .multiply: self.value = "\(runningValue * currentValue)"
                 case .divide: self.value = "\(runningValue / currentValue)"
                 case .percent: self.value = "\(runningValue / 100 * currentValue)"
-                case .squareRoot: self.value = "\((runningValue).squareRoot())"
+                case .squareRoot: self.value = "\(abs(runningValue).squareRoot())"
                 case .pow: self.value = "\(pow(runningValue,currentValue))"
                 case .none:
                     break
                 }
             }
-            
             if button != .equal {
+                // self.value = ""
                 self.value = "0"
             }
+
         case .ac:
             self.value = "0"
         case .decimal:
             self.value = value + button.rawValue
+            break
+        case .plusMinus:
+            self.value = "-"
             break
         default:
             let number = button.rawValue
