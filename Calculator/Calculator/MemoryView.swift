@@ -16,30 +16,6 @@ struct MemoryView: View {
     var body: some View {
             NavigationView {
                 List{
-                    /*Section(header: Text("What's next?")){
-                        HStack{
-                             TextField("New item", text: self.$newMemoryItem)
-                                Button(action: {
-                                let memoryItem = MemoryItem(context: self.managedObjectContext)
-                                memoryItem.title = self.newMemoryItem
-                                memoryItem.createdAt = Date()
-                                
-                                do{
-                                    try self.managedObjectContext.save()
-                                }catch{
-                                    print(error)
-                                }
-                                
-                                self.newMemoryItem = ""
-        
-                             }){
-                                Image(systemName: "plus.circle.fill")
-                                    .foregroundColor(.green)
-                                    .imageScale(.large)
-                                }
-                                .disabled(newMemoryItem.isEmpty)
-                        }
-                    }.font(.headline)*/
                     Section(header: Text("Calculations")){
                         ForEach(self.memoryItems) {MemoryItem in
                             MemoryItemView(title: MemoryItem.title!, cretedAt: "\(MemoryItem.createdAt!)")
