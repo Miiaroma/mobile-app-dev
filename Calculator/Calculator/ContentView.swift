@@ -52,6 +52,7 @@ struct ContentView: View {
     @State var value = "0"
     @State var runningNumber: Double = 0
     @State var currentOperation: Operation = .none
+    @Environment(\.managedObjectContext)var managedObjectContext
     
     let buttons: [[CalculatorButton]] = [
         [.mc, .mPlus, .pow, .squareRoot],
@@ -164,6 +165,9 @@ struct ContentView: View {
         case .plusMinus:
             self.value = "-" + value
             break
+        /*case .mPlus:
+             MemoryView()*/
+            
         default:
             let number = button.rawValue
             if self.value == "0" {
