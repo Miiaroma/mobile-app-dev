@@ -1,2 +1,2 @@
 # mobile-app-dev
-Swift exercises.
+Swift exercises and Calculator assignment.
